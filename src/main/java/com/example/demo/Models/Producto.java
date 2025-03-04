@@ -2,42 +2,42 @@ package com.example.demo.Models;
 
 
 import jakarta.persistence.*;
-import java.time.LocalDate;
+//import java.time.LocalDate;
 
 
 
 //model class
 @Entity
 public class Producto {//creo tabla de mysql
-    @id 
+    @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @column
+    @Column
     private String nombre;
 
-    @column
+    @Column
     private String marca;
 
-    @column
+    @Column
     private String categoriaDeProduct;
     
-    @column
+    @Column
     private String descripProduct;
 
-    @column
+    @Column
     private double precioProduct;
 
-    @column
+    @Column
     private String reseñaProduct;
 
-    @column
+    @Column
     private double pesoDelProdut;
 
-    @column
+    @Column
     private Integer fechaDeVencimient;
 
-    @column
+    @Column
     private boolean estado = true;
 
 

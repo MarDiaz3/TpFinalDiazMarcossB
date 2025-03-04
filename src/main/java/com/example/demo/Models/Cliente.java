@@ -2,39 +2,40 @@ package com.example.demo.Models;
 
 
 import jakarta.persistence.*;
-import java.time.LocalDate;
+
 
 public class Cliente {
-    @id 
+    @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @column
+    @Column
     private Integer id;
 
-    @column
+    @Column
     private Integer dni;
 
-    @column
+    @Column
     private String nombreApellidos;
 
-    @column
+    @Column
     private Integer edad;
 
-    @column
+    @Column
     private String formDePago;
 
-    @column
+    @Column
     private Integer numDeClient;
 
-    @column
+    @Column
     private double pagoDelProduct;
 
-    @column
+    @Column
     private String correoClient;
 
-    @column ()
+    @Column ()
     private boolean estado = true;
+  }
 
     //constructorVacio
     public Cliente ()  {
@@ -52,7 +53,7 @@ public class Cliente {
         this.correoClient = correoClient;
         this.estado = estado;
     
-    }
+   
     //getters setters
     public Integer getId(){
         return id;
@@ -112,4 +113,5 @@ public class Cliente {
     public void setEstado(Boolean estado){
     this.estado = estado; 
     }
+
 }
