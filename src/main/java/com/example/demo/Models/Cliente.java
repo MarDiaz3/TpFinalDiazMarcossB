@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Cliente {
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer Id;
 
     @Column
     private Integer id;
@@ -35,7 +35,7 @@ public class Cliente {
 
     @Column ()
     private boolean estado = true;
-  }
+  
 
     //constructorVacio
     public Cliente ()  {
@@ -52,7 +52,7 @@ public class Cliente {
         this.pagoDelProduct = pagoDelProduct;
         this.correoClient = correoClient;
         this.estado = estado;
-    
+    }
    
     //getters setters
     public Integer getId(){
